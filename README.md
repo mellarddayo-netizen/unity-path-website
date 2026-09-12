@@ -1,6 +1,12 @@
-# Unity Path — Reference-Matched Website
+# UNITY PATH RECOVERY AND COLLECTION SERVICES OPC
 
-This version is designed to closely follow the supplied website reference image:
-navy/gold branding, white navigation, large split hero, four feature icons, about section, navy four-step approach band, and compact footer.
+Reference-matched corporate website for GitHub Pages.
 
-The Facebook link remains a placeholder until the exact Page URL is supplied.
+## Upload
+Replace the existing `index.html` in the GitHub Pages repository with this `index.html` and upload the three JPG assets in the same folder:
+- brand-logo.jpg
+- hero-handshake.jpg
+- office-logo.jpg
+
+The Facebook Page is linked to:
+https://www.facebook.com/profile.php?id=61594091440461
