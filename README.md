@@ -1,5 +1,6 @@
-# Unity Path Website — Facebook-Ready Brand Version
+# Unity Path — Reference-Matched Website
 
-A single-file GitHub Pages website styled around the supplied Unity Path Facebook branding: navy blue, gold, white, and the People | Process | Progress identity.
+This version is designed to closely follow the supplied website reference image:
+navy/gold branding, white navigation, large split hero, four feature icons, about section, navy four-step approach band, and compact footer.
 
-The Facebook button is intentionally left as a placeholder because the exact page URL was not visible in the supplied screenshot. Replace the `href="#"` on the Facebook Page link with the exact Facebook Page URL before launch.
+The Facebook link remains a placeholder until the exact Page URL is supplied.
