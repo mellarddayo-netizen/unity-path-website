@@ -22,10 +22,39 @@ footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-co
 @media(max-width:780px){.top-right{display:none}.top .wrap{justify-content:center}.header{height:78px}header{height:78px}.brand{width:auto}.brand img{width:215px;height:76px}.navlinks{display:none;position:absolute;top:78px;left:0;right:0;height:auto;background:#fff;padding:8px 6%;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 8px 20px rgba(0,0,0,.08)}.navlinks.show{display:flex}.navlinks>a{height:43px;border-bottom:1px solid #eee}.navlinks .navbtn{justify-content:center;margin:8px 0}.menu{display:block}.hero{height:620px}.hero-photo{left:0;opacity:.82}.hero-panel{width:100%;height:72%;clip-path:none}.hero-content{padding-top:55px}.hero-copy{width:100%}.hero h1{text-align:center;font-size:54px}.ey{text-align:center}.hero-sub{font-size:17px;white-space:normal}.hero-sub:before,.hero-sub:after{width:55px}.hero-tag{font-size:15px}.hero-right{top:375px;left:12%;right:auto;color:#fff}.hero-slogan{right:8%;bottom:22px}.features{height:190px}.feature-row{width:92%;grid-template-columns:repeat(2,1fr);gap:14px}.about-grid{grid-template-columns:1fr}.side-list{grid-template-columns:1fr}.about-img{height:225px}.approach{padding:28px 0}.steps{grid-template-columns:1fr 1fr;row-gap:18px}.foot-grid{grid-template-columns:1fr 1fr}.copy{display:block}.copy span{display:block;margin-top:5px}}
 @media(max-width:480px){.brand img{width:195px}.hero h1{font-size:43px}.hero-sub{font-size:15px}.hero-tag{font-size:13px}.hero-right{font-size:12px}.foot-grid{grid-template-columns:1fr}}
 </style>
+
+<style>
+.detail-section{padding:78px 0;background:#fff}
+.detail-section.light{background:#f7f8fa}
+.section-inner{width:min(1120px,calc(100% - 48px));margin:auto}
+.detail-section h2{font-family:Georgia,serif;color:#0b3769;font-size:42px;line-height:1.08;margin:10px 0 18px}
+.detail-section .lead{max-width:760px;color:#52647a;font-size:17px;line-height:1.7}
+.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+.detail-card{border:1px solid #e1e6eb;border-radius:14px;padding:28px;background:#fff;box-shadow:0 8px 24px rgba(9,42,79,.06)}
+.detail-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#0b3769;color:#e5b94f;border:2px solid #e5b94f;font-weight:800;margin-bottom:18px}
+.detail-card h3{color:#0b3769;margin:0 0 10px;font-size:20px}
+.detail-card p,.two-col p{color:#5c6c7e;line-height:1.65}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.compliance-list{display:grid;gap:14px}
+.compliance-list div{padding:18px 20px;border-left:4px solid #d9aa3b;background:#fff;border-radius:8px;box-shadow:0 5px 18px rgba(9,42,79,.05)}
+.compliance-list b{display:block;color:#0b3769;margin-bottom:5px}
+.compliance-list span{color:#657386}
+.careers-section{background:#0b3769;color:#fff}
+.careers-section h2{color:#fff}
+.careers-section .lead{color:#dce8f5}
+.career-box{margin-top:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.career-box h3{font-size:24px;margin:0 0 8px}.career-box p{margin:0;color:#dce8f5;max-width:680px;line-height:1.6}
+.gold-btn{display:inline-block;background:#dfb64e;color:#082d55;padding:14px 22px;border-radius:7px;font-weight:800;text-decoration:none;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.contact-card{border:1px solid #e0e5eb;border-radius:12px;padding:24px;background:#fff}
+.contact-card h3{color:#0b3769;margin:0 0 12px}.contact-card p{color:#58697b;line-height:1.65;margin:0}.contact-card a{color:#0b3769;font-weight:700;text-decoration:none}
+@media(max-width:900px){.detail-grid,.contact-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr;gap:30px}.career-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:600px){.detail-grid,.contact-grid{grid-template-columns:1fr}.detail-section h2{font-size:32px}.section-inner{width:min(100% - 30px,1120px)}}
+</style>
 </head>
 <body>
 <div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
-<header><div class="wrap nav"><a class="brand" href="#home"><img src="brand-logo.jpg" alt="Unity Path Recovery and Collection Services OPC"></a><nav class="navlinks"><a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#approach">Our Approach</a><a href="#compliance">Compliance</a><a href="#careers">Careers</a><a href="#contact">Contact</a><a class="navbtn" href="#contact">Get in Touch&nbsp; →</a></nav><button class="menu" aria-label="Open menu">☰</button></div></header>
+<header><div class="wrap nav"><a class="brand" href="#home"><img src="brand-logo.jpg" alt="Unity Path Recovery and Collection Services OPC"></a><nav class="navlinks"><a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a><a class="navbtn" href="#contact-detail">Get in Touch&nbsp; →</a></nav><button class="menu" aria-label="Open menu">☰</button></div></header>
 <section id="home" class="hero"><div class="hero-photo"></div><div class="hero-panel"></div><div class="wrap hero-content"><div class="hero-copy"><div class="ey">PEOPLE | PROCESS | PROGRESS</div><h1>UNITY PATH</h1><div class="hero-sub">RECOVERY AND COLLECTION<br>SERVICES OPC</div><div class="hero-tag">Building Better Financial Futures<br>Through Responsible Recovery</div></div></div><div class="hero-right"><b>RESPONSIBLE</b><b>PROFESSIONAL</b><b>ETHICAL</b><b>RESULTS-DRIVEN</b></div><div class="hero-slogan">Together<br>Toward a Stronger<br>Tomorrow</div></section>
 <section class="features"><div class="feature-row">
 <div><div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c.6-3.2 2.6-5 6-5s5.4 1.8 6 5"/><path d="M14 14c3.1-.1 5.3 1.5 6 4.2"/></svg></div><b>CLIENT<br>SUPPORT</b></div>
@@ -33,14 +62,70 @@ footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-co
 <div><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><b>COMPLIANCE<br>FOCUSED</b></div>
 <div><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V6M16 20V3M22 20H2"/><path d="m4 9 5-3 6-2 4-2"/></svg></div><b>SUSTAINABLE<br>SOLUTIONS</b></div>
 </div></section>
-<section id="about" class="about"><div class="wrap about-grid"><div><div class="label">ABOUT UNITY PATH</div><h2>A Partner in Responsible<br><span>Account Recovery</span></h2><p>UNITY PATH RECOVERY AND COLLECTION SERVICES OPC is a growing Philippine collection service provider focused on professional communication, organized processes, and dependable support for businesses.</p><p>We believe in building better financial futures through integrity, discipline, and people-centered service.</p><a class="goldbtn" href="#services">Learn More About Us&nbsp; →</a></div><div class="about-img"><img src="office-logo.jpg" alt="Unity Path office branding"></div><div class="side-list">
+<section id="about" class="about"><div class="wrap about-grid"><div><div class="label">ABOUT UNITY PATH</div><h2>A Partner in Responsible<br><span>Account Recovery</span></h2><p>UNITY PATH RECOVERY AND COLLECTION SERVICES OPC is a growing Philippine collection service provider focused on professional communication, organized processes, and dependable support for businesses.</p><p>We believe in building better financial futures through integrity, discipline, and people-centered service.</p><a class="goldbtn" href="#services-detail">Learn More About Us&nbsp; →</a></div><div class="about-img"><img src="office-logo.jpg" alt="Unity Path office branding"></div><div class="side-list">
 <div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 20c.5-3.2 2.5-5 6-5s5.5 1.8 6 5"/><path d="M14 15c3-.1 5.3 1.5 6 4"/></svg></div><div><b>Professional Team</b><span>Committed to ethical and respectful communication.</span></div></div>
 <div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.2-1.7l2-1.5-2-3.4-2.3 1a8 8 0 0 0-3-1.7L13.2 4H9.3l-.4 2.7a8 8 0 0 0-3 1.7l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 3.4 12c0 .6.1 1.2.2 1.7l-2 1.5 2 3.4 2.3-1a8 8 0 0 0 3 1.7l.4 2.7h3.9l.4-2.7a8 8 0 0 0 3-1.7l2.3 1 2-3.4-2-1.5c.1-.5.2-1.1.2-1.7z"/></svg></div><div><b>Organized Processes</b><span>Focused on accurate records and proper documentation.</span></div></div>
 <div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div><b>Compliance Minded</b><span>We work within legal and regulatory guidelines.</span></div></div>
 <div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V7M16 20V4M22 20H2"/></svg></div><div><b>Growing With Purpose</b><span>Continuously improving to serve our clients better.</span></div></div>
 </div></div></section>
+
+<section id="services-detail" class="detail-section">
+  <div class="section-inner">
+    <div class="eyebrow">OUR SERVICES</div>
+    <h2>Professional Recovery Solutions</h2>
+    <p class="lead">Structured, respectful, and results-driven collection support designed to help businesses manage accounts responsibly.</p>
+    <div class="detail-grid">
+      <article class="detail-card"><div class="detail-icon">01</div><h3>Account Recovery</h3><p>Professional account follow-up focused on clear communication, responsible engagement, and practical recovery solutions.</p></article>
+      <article class="detail-card"><div class="detail-icon">02</div><h3>Collection Services</h3><p>Organized collection support with consistent processes, proper documentation, and transparent status reporting.</p></article>
+      <article class="detail-card"><div class="detail-icon">03</div><h3>Account Management</h3><p>Accurate handling of assigned accounts, activity tracking, and timely updates for clients.</p></article>
+      <article class="detail-card"><div class="detail-icon">04</div><h3>Reporting & Documentation</h3><p>Clear records and regular reporting to support accountability, visibility, and informed decisions.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="compliance-detail" class="detail-section light">
+  <div class="section-inner two-col">
+    <div>
+      <div class="eyebrow">COMPLIANCE</div>
+      <h2>Responsible Collection, Every Step</h2>
+      <p>We believe effective recovery should be built on professionalism, respect, accurate records, confidentiality, and responsible communication.</p>
+      <p>Our processes are designed to support ethical account handling and to operate within applicable legal and regulatory requirements.</p>
+    </div>
+    <div class="compliance-list">
+      <div><b>Professional Communication</b><span>Clear, respectful, and appropriate engagement.</span></div>
+      <div><b>Confidentiality</b><span>Responsible handling of account and client information.</span></div>
+      <div><b>Accurate Documentation</b><span>Consistent records and traceable account activity.</span></div>
+      <div><b>Responsible Practices</b><span>People-centered recovery with accountability at every stage.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="careers-detail" class="detail-section careers-section">
+  <div class="section-inner">
+    <div class="eyebrow">CAREERS</div>
+    <h2>Grow With Unity Path</h2>
+    <p class="lead">We are building a professional team that values integrity, discipline, communication, and continuous improvement.</p>
+    <div class="career-box">
+      <div><h3>Join Our Growing Team</h3><p>Interested in becoming part of Unity Path Recovery and Collection Services OPC? Send your application or inquiry to our official email.</p></div>
+      <a class="gold-btn" href="mailto:admin@unitypathrecovery.com">Send Your Application →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact-detail" class="detail-section contact-section">
+  <div class="section-inner">
+    <div class="eyebrow">CONTACT US</div>
+    <h2>Let's Build a Better Path Forward</h2>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>Office</h3><p>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
+      <div class="contact-card"><h3>Phone</h3><p><a href="tel:+639192555965">+63 919 255 5965</a></p></div>
+      <div class="contact-card"><h3>Email</h3><p><a href="mailto:admin@unitypathrecovery.com">admin@unitypathrecovery.com</a></p></div>
+      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
+    </div>
+  </div>
+</section>
 <section id="approach" class="approach"><div class="wrap approach-grid"><div><div class="label">OUR APPROACH</div><h2>A Clearer Path, Step by Step</h2></div><div class="steps"><div class="step"><div class="num">01</div><div><b>Understand</b><p>We review each account and identify the best approach.</p></div></div><div class="step"><div class="num">02</div><div><b>Communicate</b><p>We engage with professionalism and respect.</p></div></div><div class="step"><div class="num">03</div><div><b>Document</b><p>We maintain accurate records at every step.</p></div></div><div class="step"><div class="num">04</div><div><b>Report</b><p>We provide transparent updates and results.</p></div></div></div><div class="approach-quote">Responsible today.<br>Stronger tomorrow.</div></div></section>
 <section id="services" style="display:none"></section><section id="compliance" style="display:none"></section><section id="careers" style="display:none"></section><section id="contact" style="display:none"></section>
-<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#approach">Our Approach</a><a href="#compliance">Compliance</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 2 8123 4567</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
+<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
 <script>const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks');menu&&menu.addEventListener('click',()=>nav.classList.toggle('show'));nav&&nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));</script>
 </body></html>
