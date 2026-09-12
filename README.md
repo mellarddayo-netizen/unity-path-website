@@ -1,6 +1,5 @@
-# Unity Path Website — Brand Theme
+# Unity Path Website — Facebook-Ready Brand Version
 
-Humble launch website for UNITY PATH RECOVERY AND COLLECTION SERVICES OPC.
-The design uses the supplied brand palette: deep blue and muted gold.
+A single-file GitHub Pages website styled around the supplied Unity Path Facebook branding: navy blue, gold, white, and the People | Process | Progress identity.
 
-Before publishing, confirm actual company contact details, address, registration information, and any compliance wording.
+The Facebook button is intentionally left as a placeholder because the exact page URL was not visible in the supplied screenshot. Replace the `href="#"` on the Facebook Page link with the exact Facebook Page URL before launch.
