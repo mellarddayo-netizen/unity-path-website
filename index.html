@@ -80,9 +80,134 @@ footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-co
  .hero-right{top:auto;bottom:105px;left:8%;right:auto;font-size:12px}.hero-slogan{right:8%;bottom:28px;font-size:18px}
 }
 </style>
+
+<style id="mobile-v8">
+html{scroll-behavior:smooth}
+@media (max-width:780px){
+  body{overflow-x:hidden}
+  .topbar{height:48px;min-height:48px}
+  .topbar .wrap{justify-content:center}
+  .topbar .right{display:none}
+  .topbar .ey{font-size:9px;letter-spacing:3px}
+
+  header,.site-header,.navbar{height:82px;min-height:82px}
+  header .wrap,.site-header .wrap,.navbar .wrap{height:82px}
+  .brand img,.logo img{max-height:68px;max-width:250px}
+  .nav-toggle,.hamburger{width:42px;height:42px}
+
+  /* Mobile dropdown */
+  .nav-menu,.nav-links,.nav-list{
+    position:absolute!important;left:15px!important;right:15px!important;top:78px!important;
+    display:none!important;flex-direction:column!important;gap:0!important;
+    background:#fff!important;border:1px solid #e1e6eb!important;border-radius:10px!important;
+    box-shadow:0 15px 35px rgba(0,0,0,.15)!important;padding:8px 0!important;z-index:9999!important;
+  }
+  .nav-menu.open,.nav-links.open,.nav-list.open{display:flex!important}
+  .nav-menu a,.nav-links a,.nav-list a{padding:14px 20px!important;font-size:15px!important}
+  .nav-menu a:hover,.nav-links a:hover,.nav-list a:hover{background:#f5f7fa}
+
+  /* Hero: show both models and keep the text readable */
+  .hero{height:650px!important}
+  .hero-photo{left:0!important;inset:0!important;background-position:61% top!important;opacity:.30!important}
+  .hero-panel{width:100%!important;clip-path:none!important;opacity:.94!important}
+  .hero-content{padding:52px 25px 0!important;align-items:flex-start!important}
+  .campaign-copy{width:100%!important;max-width:360px!important}
+  .campaign-copy .ey{font-size:8px!important;letter-spacing:2.5px!important;margin-bottom:17px!important}
+  .campaign-copy h1{font-size:51px!important;line-height:.88!important;letter-spacing:-.7px!important}
+  .campaign-line{margin:21px 0 15px!important;width:65px!important}
+  .campaign-text{font-size:16px!important;line-height:1.45!important;max-width:270px!important}
+  .hero-cta{padding:13px 19px!important;font-size:13px!important}
+  .hero-right{top:auto!important;left:25px!important;right:auto!important;bottom:91px!important;
+    font-size:11px!important;line-height:1.45!important;padding-left:11px!important}
+  .hero-slogan{right:22px!important;bottom:24px!important;font-size:17px!important}
+  .hero-slogan:after{margin-top:7px!important;width:48px!important}
+
+  /* Value row */
+  .features{height:auto!important;min-height:250px!important;padding:18px 0!important}
+  .feature-row{width:100%!important;padding:0 16px!important;grid-template-columns:repeat(2,1fr)!important;gap:0!important}
+  .feature-row>div{padding:17px 8px!important}
+  .feature-row>div:not(:last-child):after{display:none!important}
+  .feature-icon{width:52px!important;height:52px!important}
+  .feature-icon svg{width:25px!important;height:25px!important}
+  .feature b{font-size:11px!important;line-height:1.25!important}
+
+  /* All sections */
+  .section-inner,.wrap{width:calc(100% - 36px)!important;margin-left:auto!important;margin-right:auto!important}
+  .detail-section{padding:58px 0!important}
+  .detail-section h2{font-size:34px!important;line-height:1.08!important}
+  .detail-section .lead{font-size:16px!important;line-height:1.55!important}
+  .detail-grid{grid-template-columns:1fr!important;gap:14px!important;margin-top:25px!important}
+  .detail-card{padding:24px!important;border-radius:13px!important}
+  .detail-card h3{font-size:21px!important}
+  .detail-card p{font-size:16px!important;line-height:1.55!important}
+
+  .two-col{grid-template-columns:1fr!important;gap:28px!important}
+  .two-col p{font-size:16px!important;line-height:1.6!important}
+  .compliance-list{gap:12px!important}
+  .compliance-list div{padding:18px!important}
+  .compliance-list span{font-size:15px!important;line-height:1.5!important}
+
+  .careers-section{padding:62px 0!important}
+  .careers-section h2{font-size:38px!important}
+  .careers-section .lead{font-size:17px!important}
+  .career-visual{height:210px!important;margin:22px 0!important;border-radius:13px!important}
+  .career-box{display:block!important;padding:24px!important;margin-top:18px!important}
+  .career-box h3{font-size:24px!important}
+  .career-box p{font-size:16px!important;line-height:1.55!important}
+  .career-box .gold-btn{display:block!important;text-align:center!important;margin-top:22px!important;width:100%!important;box-sizing:border-box}
+
+  .contact-grid{grid-template-columns:1fr!important;gap:12px!important}
+  .contact-card{padding:20px!important}
+  .contact-card h3{font-size:18px!important}
+  .contact-card p{font-size:15px!important}
+
+  footer{font-size:13px!important}
+  footer .wrap{width:calc(100% - 36px)!important}
+  footer .footer-grid{grid-template-columns:1fr!important;gap:28px!important}
+
+  /* Prevent anchor jumps from hiding under the sticky header */
+  section[id]{scroll-margin-top:95px}
+}
+</style>
+
+<style id="career-image-v9">
+.career-visual{width:100%;height:280px;margin:26px 0 28px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#173f6c}
+.career-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 45%}
+@media(max-width:780px){.career-visual{height:220px!important;margin:22px 0 20px!important;border-radius:13px!important}.career-visual img{object-position:center 44%!important}}
+</style>
+
+<style id="growth-v10">
+.growth-section{background:#f6f7f8;padding:78px 0 90px;color:#0b3769}
+.growth-inner{width:min(1120px,calc(100% - 48px));margin:auto}
+.growth-heading{text-align:center;max-width:760px;margin:0 auto 32px}
+.growth-heading .eyebrow{display:inline-block;color:#0b3769;font-size:12px;font-weight:800;letter-spacing:2.5px;border-bottom:3px solid #d6aa40;padding-bottom:8px}
+.growth-heading h2{font:700 50px/1.05 Georgia,serif;margin:15px 0 14px;color:#0b3769}
+.growth-heading h2 span{color:#c9972d}
+.growth-heading p{font-size:17px;line-height:1.65;color:#5c6c7e;margin:0 auto;max-width:680px}
+.growth-image-wrap{border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(7,42,78,.16);border:1px solid #dce2e8;background:#fff}
+.growth-image-wrap img{display:block;width:100%;height:auto}
+.growth-cta{margin-top:28px;border-radius:15px;background:#0b3769;color:#fff;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:28px;box-shadow:0 12px 30px rgba(7,42,78,.12)}
+.growth-small{font-size:11px;letter-spacing:2px;color:#e0b64b;font-weight:800;margin-bottom:8px}
+.growth-cta h3{font-size:27px;margin:0 0 8px}
+.growth-cta p{margin:0;color:#dbe7f4;line-height:1.55;max-width:700px}
+.growth-button{background:#e0b64b;color:#082f60;padding:15px 22px;border-radius:7px;text-decoration:none;font-weight:800;white-space:nowrap}
+@media(max-width:780px){
+ .growth-section{padding:54px 0 62px}
+ .growth-inner{width:calc(100% - 30px)}
+ .growth-heading{margin-bottom:24px}
+ .growth-heading .eyebrow{font-size:10px}
+ .growth-heading h2{font-size:38px}
+ .growth-heading p{font-size:16px;line-height:1.55}
+ .growth-image-wrap{border-radius:12px}
+ .growth-cta{display:block;padding:24px;margin-top:18px}
+ .growth-cta h3{font-size:24px}
+ .growth-cta p{font-size:15px}
+ .growth-button{display:block;text-align:center;margin-top:20px}
+}
+</style>
 </head>
 <body>
-<div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
+<div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
 <header><div class="wrap nav"><a class="brand" href="#home"><img src="brand-logo.jpg" alt="Unity Path Recovery and Collection Services OPC"></a><nav class="navlinks"><a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a><a class="navbtn" href="#contact-detail">Get in Touch&nbsp; →</a></nav><button class="menu" aria-label="Open menu">☰</button></div></header>
 <section id="home" class="hero">
   <div class="hero-photo"></div>
@@ -143,14 +268,26 @@ footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-co
   </div>
 </section>
 
-<section id="careers-detail" class="detail-section careers-section">
-  <div class="section-inner">
-    <div class="eyebrow">CAREERS</div>
-    <h2>Grow With Unity Path</h2>
-    <p class="lead">We are building a professional team that values integrity, discipline, communication, and continuous improvement.</p>
-    <div class="career-box">
-      <div><h3>Join Our Growing Team</h3><p>Interested in becoming part of Unity Path Recovery and Collection Services OPC? Send your application or inquiry to our official email.</p></div>
-      <a class="gold-btn" href="mailto:admin@unitypathrecovery.com">Send Your Application →</a>
+
+<section id="careers-detail" class="growth-section">
+  <div class="growth-inner">
+    <div class="growth-heading">
+      <div class="eyebrow">GROW WITH UNITY PATH</div>
+      <h2>Focused People.<br><span>Real Results.</span></h2>
+      <p>We are building a professional team that values integrity, discipline, communication, and continuous improvement.</p>
+    </div>
+
+    <div class="growth-image-wrap">
+      <img src="unity-path-growth.jpg" alt="Unity Path team working together">
+    </div>
+
+    <div class="growth-cta">
+      <div>
+        <div class="growth-small">CAREERS AT UNITY PATH</div>
+        <h3>Join Our Growing Team</h3>
+        <p>Interested in becoming part of Unity Path Recovery and Collection Services OPC? Send your application or inquiry to our official email.</p>
+      </div>
+      <a class="growth-button" href="mailto:admin@unitypathrecovery.com">Send Your Application&nbsp; →</a>
     </div>
   </div>
 </section>
@@ -163,12 +300,32 @@ footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-co
       <div class="contact-card"><h3>Office</h3><p>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
       <div class="contact-card"><h3>Phone</h3><p><a href="tel:+639192555965">+63 919 255 5965</a></p></div>
       <div class="contact-card"><h3>Email</h3><p><a href="mailto:admin@unitypathrecovery.com">admin@unitypathrecovery.com</a></p></div>
-      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
+      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
     </div>
   </div>
 </section>
 <section id="approach" class="approach"><div class="wrap approach-grid"><div><div class="label">OUR APPROACH</div><h2>A Clearer Path, Step by Step</h2></div><div class="steps"><div class="step"><div class="num">01</div><div><b>Understand</b><p>We review each account and identify the best approach.</p></div></div><div class="step"><div class="num">02</div><div><b>Communicate</b><p>We engage with professionalism and respect.</p></div></div><div class="step"><div class="num">03</div><div><b>Document</b><p>We maintain accurate records at every step.</p></div></div><div class="step"><div class="num">04</div><div><b>Report</b><p>We provide transparent updates and results.</p></div></div></div><div class="approach-quote">Responsible today.<br>Stronger tomorrow.</div></div></section>
 <section id="services" style="display:none"></section><section id="compliance" style="display:none"></section><section id="careers" style="display:none"></section><section id="contact" style="display:none"></section>
-<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
+<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
 <script>const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks');menu&&menu.addEventListener('click',()=>nav.classList.toggle('show'));nav&&nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));</script>
+
+<script id="mobile-nav-v8">
+document.addEventListener('DOMContentLoaded', function(){
+  const toggle = document.querySelector('.nav-toggle, .hamburger, [aria-label="Menu"], [aria-label="menu"]');
+  const menu = document.querySelector('.nav-menu, .nav-links, .nav-list');
+  if(!toggle || !menu) return;
+  toggle.setAttribute('aria-expanded','false');
+  toggle.addEventListener('click', function(e){
+    e.preventDefault();
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+});
+</script>
 </body></html>
