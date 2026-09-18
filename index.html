@@ -1,385 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#052f63">
 <title>UNITY PATH | Recovery and Collection Services OPC</title>
 <meta name="description" content="UNITY PATH RECOVERY AND COLLECTION SERVICES OPC — Building Better Financial Futures Through Responsible Recovery.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#052f63;--navy-deep:#032653;--gold:#d1a43d;--gold2:#e7c46c;--text:#092f5d;--muted:#54708e;--line:#d8dfe6}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:134px}body{margin:0;color:var(--text);font-family:"DM Sans",Arial,sans-serif;background:#fff;line-height:1.45}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,88%);margin:auto}
-.top{height:40px;position:sticky;top:0;z-index:60;background:linear-gradient(90deg,#032650,#07386d);color:#fff}.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:3.5px}.goldline{display:inline-block;width:50px;height:2px;background:var(--gold2);vertical-align:middle;margin-right:12px}.top-right{display:flex;align-items:center;gap:13px;letter-spacing:0;font-size:12px}.top-right a{display:flex;align-items:center;gap:7px;font-weight:600}.top-right em{font-style:italic;letter-spacing:.2px}.divider{opacity:.8}.fb-mini{width:18px;height:18px;border-radius:50%;background:#fff;color:#1762aa;display:grid;place-items:center}.fb-mini svg{width:13px;height:13px;fill:#1762aa;display:block}
-header{height:94px;background:#fff;border-bottom:1px solid #d8dde4;position:sticky;top:40px;z-index:50}.nav{height:100%;display:flex;align-items:center}.brand{width:305px;height:100%;display:flex;align-items:center}.brand img{width:290px;height:92px;object-fit:contain;object-position:left center;display:block}.navlinks{height:100%;flex:1;display:flex;align-items:center;justify-content:flex-end;gap:29px;font-size:12px;font-weight:800}.navlinks>a{height:100%;display:flex;align-items:center;border-bottom:2px solid transparent;white-space:nowrap}.navlinks>a:hover,.navlinks>a.active{border-color:var(--gold)}.navbtn{height:auto!important;border:0!important;background:var(--gold);padding:13px 22px;border-radius:5px;color:var(--navy);margin-left:10px}.menu{display:none;background:none;border:0;font-size:27px;color:var(--navy)}
-#home{scroll-margin-top:134px}.hero{height:430px;position:relative;overflow:hidden;background:#0a3a70}.hero-photo{position:absolute;inset:0 0 0 40%;background:url('hero-models.jpg') center center/cover no-repeat}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,47,91,.05),rgba(255,255,255,.04) 55%,rgba(255,255,255,.12))}.hero-panel{position:absolute;left:0;top:0;bottom:0;width:55%;z-index:2;background:linear-gradient(135deg,#032958 0%,#073b76 100%);clip-path:polygon(0 0,100% 0,78% 100%,0 100%)}.hero-panel:after{content:"";position:absolute;width:420px;height:250px;left:-80px;bottom:-150px;border:1px solid rgba(255,255,255,.08);border-radius:50%}.hero-content{position:relative;z-index:4;height:100%;display:flex;align-items:flex-start;padding-top:62px}.hero-copy{width:53%;color:#fff}.ey{font-size:10px;letter-spacing:4.2px;margin-bottom:18px;white-space:nowrap}.ey:before{content:"";display:inline-block;width:53px;height:2px;background:var(--gold2);vertical-align:middle;margin-right:12px}.hero h1{font:700 clamp(54px,5.8vw,77px)/.9 Georgia,serif;letter-spacing:1px;margin:0;color:#fff}.hero-sub{font:600 21px/1.05 Montserrat,Arial,sans-serif;text-align:center;width:500px;max-width:100%;margin-top:12px;white-space:nowrap}.hero-sub:before,.hero-sub:after{content:"";display:inline-block;width:112px;height:2px;background:var(--gold2);vertical-align:middle;margin:0 9px 5px 0}.hero-sub:after{margin:0 0 5px 9px}.hero-tag{text-align:center;width:500px;max-width:100%;font-size:17px;line-height:1.35;font-style:italic;margin-top:20px}.hero-right{position:absolute;z-index:5;right:5.5%;top:29px;color:var(--navy);font-size:14px;font-weight:800;line-height:1.55;letter-spacing:.5px;border-left:2px solid var(--gold);padding-left:14px}.hero-slogan{position:absolute;z-index:5;right:4.3%;bottom:35px;color:#fff;font-size:17px;font-style:italic;line-height:1.32}.hero-slogan:after{content:"";display:block;width:64px;height:2px;background:var(--gold2);margin-top:12px}
-.features{height:120px;background:#fff;position:relative;overflow:hidden}.features:after{content:"";position:absolute;right:0;bottom:0;width:30%;height:75px;background:linear-gradient(170deg,transparent 0 45%,#d9d1bb 46% 48%,#fff 49% 100%);clip-path:polygon(100% 0,100% 100%,0 100%,100% 48%)}.feature-row{position:relative;z-index:2;width:min(920px,78%);height:100%;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:50px;align-items:center;text-align:center}.feature-icon{width:58px;height:58px;margin:0 auto 7px;border-radius:50%;background:var(--navy);border:3px solid var(--gold);box-shadow:0 0 0 2px #fff;display:grid;place-items:center}.feature-icon svg{width:31px;height:31px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.feature b{display:block;font-size:11px;line-height:1.1}
-.about{padding:31px 0 35px}.about-grid{display:grid;grid-template-columns:1.2fr .9fr .82fr;gap:36px;align-items:center}.label{font-size:10px;font-weight:800;letter-spacing:1.2px}.label:before{content:"";display:inline-block;width:48px;height:2px;background:var(--gold);vertical-align:middle;margin-right:9px}.about h2{font:700 31px/1.08 Georgia,serif;margin:10px 0 9px;color:var(--navy)}.about h2 span{color:#b38a35}.about p{font-size:12.5px;color:#214d79;margin:0 0 9px;line-height:1.45}.goldbtn{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:800;padding:10px 16px;border-radius:4px;margin-top:4px}.about-img{height:245px;border-radius:17px;overflow:hidden}.about-img img{width:100%;height:100%;object-fit:cover;display:block;filter:none}.side-list{display:grid;gap:17px}.side-item{display:grid;grid-template-columns:42px 1fr;gap:10px;align-items:center}.side-icon{width:39px;height:39px;display:grid;place-items:center}.side-icon svg{width:31px;height:31px;stroke:var(--navy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.side-item b{font-size:12px;display:block;line-height:1.2}.side-item span{font-size:11px;color:#355a7d;display:block;line-height:1.25}
-.approach{background:linear-gradient(120deg,#062f61,#153f72);color:#fff;padding:22px 0 24px;position:relative;overflow:hidden}.approach:before{content:"";position:absolute;inset:0;background:linear-gradient(112deg,transparent 0 48%,rgba(255,255,255,.035) 48% 49%,transparent 49%),radial-gradient(circle at 28% 120%,transparent 0 180px,rgba(255,255,255,.05) 181px 182px,transparent 183px)}.approach-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 2.25fr .65fr;gap:25px;align-items:center}.approach .label{color:#fff}.approach h2{font:500 30px/1.1 Montserrat,Arial,sans-serif;margin:8px 0 0;color:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{display:grid;grid-template-columns:44px 1fr;gap:9px;min-width:0}.num{width:43px;height:43px;border-radius:50%;background:linear-gradient(#f1d88c,#e0b94f);color:var(--navy);display:grid;place-items:center;font-weight:800}.step b{font-size:12px}.step p{font-size:10px;color:#e1e9f1;margin:4px 0 0;line-height:1.3}.approach-quote{border-left:2px solid var(--gold2);padding-left:22px;color:var(--gold2);font-size:17px;font-style:italic;line-height:1.4}
-footer{background:#fff;padding:18px 0 0}.foot-grid{display:grid;grid-template-columns:1.25fr .82fr 1.05fr 1fr .8fr;gap:23px;align-items:start}.foot-brand img{width:235px;height:82px;object-fit:contain;object-position:left center}.foot-title{font-size:11px;font-weight:800;margin-bottom:7px}.foot-grid a,.foot-grid span{font-size:10px;color:#45627e;display:block;margin:3px 0}.fb{display:flex!important;align-items:center;gap:9px;font-weight:700;color:var(--navy)!important}.fbbox{width:30px;height:30px;background:#1877f2;border-radius:6px;color:#fff;display:grid;place-items:center}.fbbox svg{width:19px;height:19px;fill:#fff;display:block}.message{display:inline-flex!important;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--navy)!important;padding:11px 19px;border-radius:4px;font-size:11px!important;font-weight:800;margin-top:10px;white-space:nowrap}.copy{border-top:1px solid var(--line);margin-top:16px;padding:9px 0;font-size:9px;color:#60758b;display:flex;justify-content:space-between}
-@media(max-width:1050px){.navlinks{gap:16px;font-size:11px}.brand{width:250px}.brand img{width:240px}.hero-copy{width:60%}.about-grid{grid-template-columns:1.1fr .9fr}.side-list{grid-column:1/-1;grid-template-columns:1fr 1fr}.approach-grid{grid-template-columns:1fr}.approach-quote{display:none}.foot-grid{grid-template-columns:1.2fr 1fr 1fr 1fr}}
-@media(max-width:780px){.top-right{display:none}.top .wrap{justify-content:center}.header{height:78px}header{height:78px}.brand{width:auto}.brand img{width:215px;height:76px}.navlinks{display:none;position:absolute;top:78px;left:0;right:0;height:auto;background:#fff;padding:8px 6%;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 8px 20px rgba(0,0,0,.08)}.navlinks.show{display:flex}.navlinks>a{height:43px;border-bottom:1px solid #eee}.navlinks .navbtn{justify-content:center;margin:8px 0}.menu{display:block}.hero{height:620px}.hero-photo{left:0;opacity:.82}.hero-panel{width:100%;height:72%;clip-path:none}.hero-content{padding-top:55px}.hero-copy{width:100%}.hero h1{text-align:center;font-size:54px}.ey{text-align:center}.hero-sub{font-size:17px;white-space:normal}.hero-sub:before,.hero-sub:after{width:55px}.hero-tag{font-size:15px}.hero-right{top:375px;left:12%;right:auto;color:#fff}.hero-slogan{right:8%;bottom:22px}.features{height:190px}.feature-row{width:92%;grid-template-columns:repeat(2,1fr);gap:14px}.about-grid{grid-template-columns:1fr}.side-list{grid-template-columns:1fr}.about-img{height:225px}.approach{padding:28px 0}.steps{grid-template-columns:1fr 1fr;row-gap:18px}.foot-grid{grid-template-columns:1fr 1fr}.copy{display:block}.copy span{display:block;margin-top:5px}}
-@media(max-width:480px){.brand img{width:195px}.hero h1{font-size:43px}.hero-sub{font-size:15px}.hero-tag{font-size:13px}.hero-right{font-size:12px}.foot-grid{grid-template-columns:1fr}}
-</style>
 
 <style>
-.detail-section{padding:78px 0;background:#fff}
-.detail-section.light{background:#f7f8fa}
-.section-inner{width:min(1120px,calc(100% - 48px));margin:auto}
-.detail-section h2{font-family:Georgia,serif;color:#0b3769;font-size:42px;line-height:1.08;margin:10px 0 18px}
-.detail-section .lead{max-width:760px;color:#52647a;font-size:17px;line-height:1.7}
-.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
-.detail-card{border:1px solid #e1e6eb;border-radius:14px;padding:28px;background:#fff;box-shadow:0 8px 24px rgba(9,42,79,.06)}
-.detail-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#0b3769;color:#e5b94f;border:2px solid #e5b94f;font-weight:800;margin-bottom:18px}
-.detail-card h3{color:#0b3769;margin:0 0 10px;font-size:20px}
-.detail-card p,.two-col p{color:#5c6c7e;line-height:1.65}
+:root{
+  --navy:#052f63;--navy2:#0a3d77;--deep:#032653;--gold:#d2a640;--gold2:#e8c96f;
+  --ink:#173e68;--muted:#5c7087;--soft:#f5f7fa;--line:#dfe5eb;--white:#fff;
+  --shadow:0 14px 36px rgba(5,47,99,.09);--radius:16px;--header:86px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 24px)}
+body{margin:0;color:var(--ink);background:#fff;font-family:"DM Sans",Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+section{scroll-margin-top:calc(var(--header) + 20px)}
+
+.topbar{min-height:38px;background:linear-gradient(90deg,var(--deep),var(--navy2));color:#fff;font-size:11px;letter-spacing:.08em}
+.topbar .wrap{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.top-message{font-weight:700;white-space:nowrap}
+.gold-line{display:inline-block;width:42px;height:2px;background:var(--gold2);vertical-align:middle;margin-right:10px}
+.top-actions{display:flex;align-items:center;gap:12px;letter-spacing:0}
+.top-actions a{font-weight:700}.top-divider{opacity:.45}
+.fb-mini{width:19px;height:19px;border-radius:50%;display:inline-grid;place-items:center;background:#fff;color:#1762aa;vertical-align:middle;margin-right:6px}
+.fb-mini svg{width:13px;height:13px;fill:#1762aa}
+
+header{position:sticky;top:0;z-index:100;height:var(--header);background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 3px 18px rgba(0,0,0,.04);backdrop-filter:blur(10px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;flex:0 0 auto}
+.brand img{width:250px;height:76px;object-fit:contain;object-position:left center;display:block}
+.navlinks{display:flex;align-items:center;justify-content:flex-end;gap:24px;height:100%;font-size:12px;font-weight:800}
+.navlinks a{position:relative;display:flex;align-items:center;height:100%;white-space:nowrap}
+.navlinks a:not(.navbtn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .2s ease}
+.navlinks a:hover::after,.navlinks a.active::after{transform:scaleX(1)}
+.navbtn{height:auto!important;padding:11px 17px;border-radius:6px;background:var(--gold);color:var(--navy);margin-left:3px;box-shadow:0 7px 18px rgba(210,166,64,.18)}
+.menu{display:none;border:0;background:transparent;color:var(--navy);font-size:28px;line-height:1;padding:8px;cursor:pointer}
+
+.hero{min-height:600px;position:relative;overflow:hidden;background:var(--navy);isolation:isolate}
+.hero-photo{position:absolute;inset:0 0 0 40%;background:url("hero-desktop.jpg") center center/cover no-repeat;z-index:-3}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,38,83,.18),rgba(3,38,83,.02) 55%,rgba(3,38,83,.15))}
+.hero-panel{position:absolute;inset:0 auto 0 0;width:52%;z-index:-2;background:linear-gradient(135deg,#032858 0%,#0a407c 100%);clip-path:polygon(0 0,100% 0,81% 100%,0 100%)}
+.hero-panel:after{content:"";position:absolute;width:520px;height:300px;left:-150px;bottom:-190px;border:1px solid rgba(255,255,255,.08);border-radius:50%}
+.hero-content{min-height:600px;display:flex;align-items:flex-start;position:relative}
+.hero-copy{width:57%;padding:67px 0 60px;color:#fff}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.eyebrow:before{content:"";width:46px;height:2px;background:var(--gold);flex:0 0 auto}
+.hero .eyebrow{color:#fff}.hero .eyebrow:before{background:var(--gold2)}
+.hero h1{margin:20px 0 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(54px,6.2vw,84px);line-height:.88;letter-spacing:-.025em;font-weight:700}
+.hero h1 span{color:var(--gold2)}
+.hero-line{width:82px;height:3px;background:var(--gold);margin:27px 0 18px}
+.hero-text{max-width:470px;margin:0;font-size:18px;line-height:1.45;color:#f3f7fb}
+.hero-cta,.gold-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:25px;padding:13px 20px;border-radius:6px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.12);transition:transform .2s ease,filter .2s ease}
+.hero-cta:hover,.gold-btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+.hero-values{position:absolute;top:42px;right:2%;display:grid;gap:2px;padding-left:16px;border-left:2px solid var(--gold);color:var(--navy);font-size:15px;line-height:1.6;letter-spacing:.08em}
+.hero-slogan{position:absolute;right:2%;bottom:38px;color:#fff;font:italic 24px/1.15 Georgia,"Times New Roman",serif}
+.hero-slogan span{color:var(--gold2)}
+.hero-slogan:after{content:"";display:block;width:62px;height:2px;background:var(--gold2);margin-top:12px}
+
+.features{background:var(--navy);color:#fff}
+.feature-row{min-height:132px;display:grid;grid-template-columns:repeat(4,1fr)}
+.feature{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px 14px}
+.feature:not(:last-child):after{content:"";position:absolute;right:0;top:25px;bottom:25px;width:1px;background:rgba(232,201,111,.55)}
+.feature-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--gold);background:#0a3a70;margin-bottom:8px}
+.feature-icon svg{width:29px;height:29px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.feature b{font-size:11px;line-height:1.2;letter-spacing:.04em}
+
+.section{padding:78px 0}.section.alt{background:var(--soft)}
+.section h2{margin:12px 0 18px;color:var(--navy);font:700 clamp(32px,4vw,44px)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.015em}
+.section h2 span{color:#b88b32}
+.lead{max-width:760px;margin:0;color:var(--muted);font-size:17px;line-height:1.7}
+
+.about-grid{display:grid;grid-template-columns:1.08fr .82fr .88fr;gap:38px;align-items:center}
+.about-copy p{color:#365979;font-size:13px;line-height:1.65;margin:0 0 10px}
+.about-image{height:275px;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line)}
+.about-image img{width:100%;height:100%;object-fit:cover;display:block}
+.side-list{display:grid;gap:18px}
+.side-item{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start}
+.side-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;background:#eef3f8}
+.side-icon svg{width:25px;height:25px;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.side-item b{display:block;color:var(--navy);font-size:13px;margin-bottom:2px}
+.side-item span{display:block;color:var(--muted);font-size:11px;line-height:1.45}
+
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:34px}
+.card{padding:27px 24px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(5,47,99,.12)}
+.card-number{width:45px;height:45px;display:grid;place-items:center;border-radius:50%;border:2px solid var(--gold);background:var(--navy);color:var(--gold2);font-size:12px;font-weight:800;margin-bottom:18px}
+.card h3{margin:0 0 9px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
+
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
-.compliance-list{display:grid;gap:14px}
-.compliance-list div{padding:18px 20px;border-left:4px solid #d9aa3b;background:#fff;border-radius:8px;box-shadow:0 5px 18px rgba(9,42,79,.05)}
-.compliance-list b{display:block;color:#0b3769;margin-bottom:5px}
-.compliance-list span{color:#657386}
-.careers-section{background:#0b3769;color:#fff}
-.careers-section h2{color:#fff}
-.careers-section .lead{color:#dce8f5}
-.career-box{margin-top:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:30px}
-.career-box h3{font-size:24px;margin:0 0 8px}.career-box p{margin:0;color:#dce8f5;max-width:680px;line-height:1.6}
-.gold-btn{display:inline-block;background:#dfb64e;color:#082d55;padding:14px 22px;border-radius:7px;font-weight:800;text-decoration:none;white-space:nowrap}
-.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
-.contact-card{border:1px solid #e0e5eb;border-radius:12px;padding:24px;background:#fff}
-.contact-card h3{color:#0b3769;margin:0 0 12px}.contact-card p{color:#58697b;line-height:1.65;margin:0}.contact-card a{color:#0b3769;font-weight:700;text-decoration:none}
-@media(max-width:900px){.detail-grid,.contact-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr;gap:30px}.career-box{flex-direction:column;align-items:flex-start}}
-@media(max-width:600px){.detail-grid,.contact-grid{grid-template-columns:1fr}.detail-section h2{font-size:32px}.section-inner{width:min(100% - 30px,1120px)}}
-</style>
+.compliance-list{display:grid;gap:13px}
+.compliance-item{padding:17px 19px;border-left:4px solid var(--gold);border-radius:9px;background:#fff;box-shadow:0 7px 20px rgba(5,47,99,.06)}
+.compliance-item b{display:block;color:var(--navy);font-size:13px;margin-bottom:4px}
+.compliance-item span{color:var(--muted);font-size:12px;line-height:1.45}
 
+.approach{position:relative;overflow:hidden;background:linear-gradient(120deg,#062e5d,#164675);color:#fff}
+.approach:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 130%,transparent 0 190px,rgba(255,255,255,.055) 191px 192px,transparent 193px),linear-gradient(112deg,transparent 0 48%,rgba(255,255,255,.035) 48% 49%,transparent 49%);pointer-events:none}
+.approach-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 2.35fr .65fr;gap:30px;align-items:center}
+.approach h2{color:#fff;font-family:Montserrat,Arial,sans-serif;font-size:31px;margin:10px 0 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{display:grid;grid-template-columns:43px 1fr;gap:9px;min-width:0}
+.step-num{width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(#f1d88c,#dfb64e);color:var(--navy);font-size:12px;font-weight:800}
+.step b{font-size:12px;color:#fff}.step p{margin:4px 0 0;color:#e1e9f1;font-size:10px;line-height:1.4}
+.approach-quote{border-left:2px solid var(--gold2);padding-left:20px;color:var(--gold2);font:italic 17px/1.4 Georgia,"Times New Roman",serif}
 
+.careers{background:var(--navy);color:#fff}.careers h2{color:#fff}.careers .eyebrow{color:var(--gold2)}.careers .eyebrow:before{background:var(--gold2)}.careers .lead{color:#dce8f5}
+.career-visual{height:410px;margin-top:30px;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.16);box-shadow:0 16px 38px rgba(0,0,0,.15)}
+.career-visual img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+.career-box{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:26px 28px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);background:rgba(255,255,255,.07)}
+.career-box h3{margin:0 0 6px;font-size:22px}.career-box p{margin:0;max-width:700px;color:#dce8f5;font-size:13px;line-height:1.6}.career-box .gold-btn{margin:0;white-space:nowrap}
 
-<style id="unity-path-v7">
-.hero{height:535px;position:relative;overflow:hidden;background:#082f60}
-.hero-photo{position:absolute;inset:0 0 0 43%;z-index:1;background:url('hero-models.jpg') center top/cover no-repeat;filter:saturate(1.02) contrast(1.03)}
-.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,46,90,.04) 0%,rgba(6,46,90,0) 55%,rgba(6,46,90,.10) 100%)}
-.hero-panel{position:absolute;left:0;top:0;bottom:0;width:53%;z-index:2;background:linear-gradient(135deg,#032958 0%,#0a407d 100%);clip-path:polygon(0 0,100% 0,79% 100%,0 100%)}
-.hero-content{position:relative;z-index:4;height:100%;display:flex;align-items:flex-start;padding-top:62px}
-.campaign-copy{width:49%;color:#fff}
-.campaign-copy .ey{font-size:10px;letter-spacing:4px;margin-bottom:19px;white-space:nowrap}
-.campaign-copy h1{font:700 clamp(57px,5.2vw,78px)/.86 Georgia,serif;letter-spacing:-1.2px;margin:0;color:#fff}
-.campaign-copy h1 span{color:#d9ad42}
-.campaign-line{width:75px;height:3px;background:#d9ad42;margin:24px 0 17px}
-.campaign-text{font-size:17px;line-height:1.42;color:#fff;margin-bottom:22px}
-.hero-cta{display:inline-flex;align-items:center;background:#d9ae48;color:#082f60;font-weight:800;padding:14px 23px;border-radius:5px;font-size:14px;text-decoration:none}
-.hero-right{position:absolute;z-index:5;right:4.2%;top:42px;color:#fff;font-size:15px;font-weight:800;line-height:1.55;letter-spacing:.4px;border-left:2px solid #d6a83e;padding-left:14px;text-shadow:0 1px 3px rgba(0,0,0,.25)}
-.hero-slogan{position:absolute;z-index:5;right:4%;bottom:35px;color:#fff;font-size:22px;line-height:1.12;font-family:Georgia,serif;font-style:italic;text-shadow:0 1px 3px rgba(0,0,0,.25)}
-.hero-slogan span{color:#d6a83e}
-.hero-slogan:after{content:"";display:block;width:64px;height:3px;background:#d6a83e;margin-top:11px}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+.contact-card{min-height:160px;padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 7px 22px rgba(5,47,99,.05)}
+.contact-card h3{margin:0 0 10px;color:var(--navy);font-size:17px}.contact-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
+.contact-card a{color:var(--navy);font-weight:700}.contact-card a:hover{text-decoration:underline;text-underline-offset:3px}
+
+footer{background:#fff;border-top:1px solid var(--line);padding-top:42px}
+.footer-grid{display:grid;grid-template-columns:1.35fr .8fr 1.1fr 1fr;gap:32px;align-items:start}
+.footer-brand img{width:235px;height:82px;object-fit:contain;object-position:left center}
+.footer-title{color:var(--navy);font-size:11px;font-weight:800;margin-bottom:10px;text-transform:uppercase;letter-spacing:.06em}
+.footer-grid a,.footer-grid span{display:block;color:#536b82;font-size:11px;margin:5px 0}.footer-grid a:hover{color:var(--navy)}
+.fb-link{display:flex!important;align-items:center;gap:8px;color:var(--navy)!important;font-weight:800}
+.fb-box{width:30px;height:30px;display:grid;place-items:center;border-radius:6px;background:#1877f2}.fb-box svg{width:18px;height:18px;fill:#fff}
+.footer-cta{display:inline-flex!important;align-items:center;justify-content:center;background:var(--gold);color:var(--navy)!important;padding:11px 17px!important;border-radius:6px;font-size:11px!important;font-weight:800;margin-top:3px!important}
+.copyright{margin-top:30px;padding:12px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#708196;font-size:9px}
+
 @media(max-width:1050px){
- .hero{height:515px}.hero-photo{left:40%}.hero-panel{width:56%}.campaign-copy{width:53%}.campaign-copy h1{font-size:62px}.hero-right{font-size:13px}
+  .navlinks{gap:15px;font-size:11px}.brand img{width:220px}
+  .about-grid{grid-template-columns:1fr 1fr}.side-list{grid-column:1/-1;grid-template-columns:1fr 1fr}
+  .approach-grid{grid-template-columns:1fr}.approach-quote{display:none}
+  .footer-grid{grid-template-columns:1.2fr 1fr 1fr}
 }
 @media(max-width:780px){
- .hero{height:620px}.hero-photo{left:0;background-position:center top;opacity:.55}.hero-panel{width:100%;height:100%;clip-path:none;opacity:.92}
- .hero-content{padding-top:58px}.campaign-copy{width:84%}.campaign-copy h1{font-size:51px}.campaign-text{font-size:16px}
- .hero-right{top:auto;bottom:105px;left:8%;right:auto;font-size:12px}.hero-slogan{right:8%;bottom:28px;font-size:18px}
+  :root{--header:76px}.wrap{width:min(100% - 30px,1120px)}
+  .top-actions{display:none}.topbar .wrap{justify-content:center}.top-message{font-size:9px;letter-spacing:.12em}.gold-line{width:30px;margin-right:7px}
+  header{height:var(--header)}.brand img{width:195px;height:68px}.menu{display:block}
+  .navlinks{position:absolute;left:0;right:0;top:var(--header);display:none;height:auto;padding:7px 15px 13px;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 25px rgba(0,0,0,.09)}
+  .navlinks.show{display:flex}.navlinks a{height:43px;border-bottom:1px solid #edf0f3}.navlinks a:last-child{border-bottom:0}.navlinks a:not(.navbtn):after{display:none}
+  .navlinks .navbtn{justify-content:center;height:auto!important;margin:10px 0 0}
+  .hero{min-height:640px}.hero-photo{inset:0;background-image:url("hero-mobile.jpg");background-position:center}.hero-photo:after{background:linear-gradient(180deg,rgba(3,38,83,.18),rgba(3,38,83,.48))}
+  .hero-panel{width:100%;height:72%;clip-path:none;opacity:.91}.hero-content{min-height:640px}.hero-copy{width:100%;padding:50px 0 30px}
+  .hero h1{text-align:center;font-size:clamp(46px,13vw,62px)}.hero .eyebrow{justify-content:center;font-size:9px}
+  .hero-line{margin:22px auto 16px}.hero-text{max-width:420px;margin:auto;text-align:center;font-size:16px}
+  .hero-cta{display:flex;width:max-content;margin:24px auto 0}    .feature-row{grid-template-columns:1fr 1fr;min-height:205px}.feature{padding:15px 8px}.feature:not(:last-child):after{display:none}.feature-icon{width:54px;height:54px}
+  .section{padding:62px 0}.about-grid,.two-col{grid-template-columns:1fr;gap:28px}.about-image{height:240px}.side-list{grid-template-columns:1fr}
+  .cards,.contact-grid{grid-template-columns:1fr 1fr}.approach{padding:60px 0}.steps{grid-template-columns:1fr 1fr;row-gap:20px}
+  .career-box{flex-direction:column;align-items:flex-start}.career-box .gold-btn{margin-top:4px}.footer-grid{grid-template-columns:1fr 1fr}
+  .copyright{display:block}.copyright span{display:block;margin-top:5px}
 }
-</style>
-
-<style id="mobile-v8">
-html{scroll-behavior:smooth}
-@media (max-width:780px){
-  body{overflow-x:hidden}
-  .topbar{height:48px;min-height:48px}
-  .topbar .wrap{justify-content:center}
-  .topbar .right{display:none}
-  .topbar .ey{font-size:9px;letter-spacing:3px}
-
-  header,.site-header,.navbar{height:82px;min-height:82px}
-  header .wrap,.site-header .wrap,.navbar .wrap{height:82px}
-  .brand img,.logo img{max-height:68px;max-width:250px}
-  .nav-toggle,.hamburger{width:42px;height:42px}
-
-  /* Mobile dropdown */
-  .nav-menu,.nav-links,.nav-list{
-    position:absolute!important;left:15px!important;right:15px!important;top:78px!important;
-    display:none!important;flex-direction:column!important;gap:0!important;
-    background:#fff!important;border:1px solid #e1e6eb!important;border-radius:10px!important;
-    box-shadow:0 15px 35px rgba(0,0,0,.15)!important;padding:8px 0!important;z-index:9999!important;
-  }
-  .nav-menu.open,.nav-links.open,.nav-list.open{display:flex!important}
-  .nav-menu a,.nav-links a,.nav-list a{padding:14px 20px!important;font-size:15px!important}
-  .nav-menu a:hover,.nav-links a:hover,.nav-list a:hover{background:#f5f7fa}
-
-  /* Hero: show both models and keep the text readable */
-  .hero{height:650px!important}
-  .hero-photo{left:0!important;inset:0!important;background-position:61% top!important;opacity:.30!important}
-  .hero-panel{width:100%!important;clip-path:none!important;opacity:.94!important}
-  .hero-content{padding:52px 25px 0!important;align-items:flex-start!important}
-  .campaign-copy{width:100%!important;max-width:360px!important}
-  .campaign-copy .ey{font-size:8px!important;letter-spacing:2.5px!important;margin-bottom:17px!important}
-  .campaign-copy h1{font-size:51px!important;line-height:.88!important;letter-spacing:-.7px!important}
-  .campaign-line{margin:21px 0 15px!important;width:65px!important}
-  .campaign-text{font-size:16px!important;line-height:1.45!important;max-width:270px!important}
-  .hero-cta{padding:13px 19px!important;font-size:13px!important}
-  .hero-right{top:auto!important;left:25px!important;right:auto!important;bottom:91px!important;
-    font-size:11px!important;line-height:1.45!important;padding-left:11px!important}
-  .hero-slogan{right:22px!important;bottom:24px!important;font-size:17px!important}
-  .hero-slogan:after{margin-top:7px!important;width:48px!important}
-
-  /* Value row */
-  .features{height:auto!important;min-height:250px!important;padding:18px 0!important}
-  .feature-row{width:100%!important;padding:0 16px!important;grid-template-columns:repeat(2,1fr)!important;gap:0!important}
-  .feature-row>div{padding:17px 8px!important}
-  .feature-row>div:not(:last-child):after{display:none!important}
-  .feature-icon{width:52px!important;height:52px!important}
-  .feature-icon svg{width:25px!important;height:25px!important}
-  .feature b{font-size:11px!important;line-height:1.25!important}
-
-  /* All sections */
-  .section-inner,.wrap{width:calc(100% - 36px)!important;margin-left:auto!important;margin-right:auto!important}
-  .detail-section{padding:58px 0!important}
-  .detail-section h2{font-size:34px!important;line-height:1.08!important}
-  .detail-section .lead{font-size:16px!important;line-height:1.55!important}
-  .detail-grid{grid-template-columns:1fr!important;gap:14px!important;margin-top:25px!important}
-  .detail-card{padding:24px!important;border-radius:13px!important}
-  .detail-card h3{font-size:21px!important}
-  .detail-card p{font-size:16px!important;line-height:1.55!important}
-
-  .two-col{grid-template-columns:1fr!important;gap:28px!important}
-  .two-col p{font-size:16px!important;line-height:1.6!important}
-  .compliance-list{gap:12px!important}
-  .compliance-list div{padding:18px!important}
-  .compliance-list span{font-size:15px!important;line-height:1.5!important}
-
-  .careers-section{padding:62px 0!important}
-  .careers-section h2{font-size:38px!important}
-  .careers-section .lead{font-size:17px!important}
-  .career-visual{height:210px!important;margin:22px 0!important;border-radius:13px!important}
-  .career-box{display:block!important;padding:24px!important;margin-top:18px!important}
-  .career-box h3{font-size:24px!important}
-  .career-box p{font-size:16px!important;line-height:1.55!important}
-  .career-box .gold-btn{display:block!important;text-align:center!important;margin-top:22px!important;width:100%!important;box-sizing:border-box}
-
-  .contact-grid{grid-template-columns:1fr!important;gap:12px!important}
-  .contact-card{padding:20px!important}
-  .contact-card h3{font-size:18px!important}
-  .contact-card p{font-size:15px!important}
-
-  footer{font-size:13px!important}
-  footer .wrap{width:calc(100% - 36px)!important}
-  footer .footer-grid{grid-template-columns:1fr!important;gap:28px!important}
-
-  /* Prevent anchor jumps from hiding under the sticky header */
-  section[id]{scroll-margin-top:95px}
+@media(max-width:520px){
+  .hero{min-height:625px}.hero-content{min-height:625px}.hero h1{font-size:45px}.hero-text{font-size:14px}
+  .cards,.contact-grid,.footer-grid{grid-template-columns:1fr}
+  .career-visual{height:235px}.steps{grid-template-columns:1fr}.section h2{font-size:32px}.lead{font-size:15px}.feature b{font-size:10px}
 }
-</style>
-
-<style id="career-image-v9">
-.career-visual{width:100%;height:280px;margin:26px 0 28px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#173f6c}
-.career-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 45%}
-@media(max-width:780px){.career-visual{height:220px!important;margin:22px 0 20px!important;border-radius:13px!important}.career-visual img{object-position:center 44%!important}}
-</style>
-
-
-
-<style id="growth-v11">
-.growth-section{background:#f6f7f8;padding:62px 0 76px}
-.growth-inner{width:min(1120px,calc(100% - 48px));margin:auto}
-.growth-image-wrap{width:100%;border-radius:16px;overflow:hidden;box-shadow:0 18px 50px rgba(7,42,78,.14);border:1px solid #dce2e8;background:#fff}
-.growth-image-wrap img{display:block;width:100%;height:auto}
-.growth-cta{margin-top:28px;border-radius:15px;background:#0b3769;color:#fff;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.growth-small{font-size:11px;letter-spacing:2px;color:#e0b64b;font-weight:800;margin-bottom:8px}
-.growth-cta h3{font-size:27px;margin:0 0 8px}
-.growth-cta p{margin:0;color:#dbe7f4;line-height:1.55;max-width:700px}
-.growth-button{background:#e0b64b;color:#082f60;padding:15px 22px;border-radius:7px;text-decoration:none;font-weight:800;white-space:nowrap}
-@media(max-width:780px){
- .growth-section{padding:38px 0 52px}
- .growth-inner{width:calc(100% - 24px)}
- .growth-image-wrap{border-radius:10px}
- .growth-cta{display:block;padding:23px;margin-top:16px}
- .growth-cta h3{font-size:23px}
- .growth-cta p{font-size:15px;line-height:1.5}
- .growth-button{display:block;text-align:center;margin-top:19px;width:100%;box-sizing:border-box}
-}
-</style>
-
-<style id="v12-final">
-.growth-final{background:#f5f7f9;padding:78px 0 88px}
-.growth-final-inner{width:min(1120px,calc(100% - 48px));margin:auto}
-.growth-final-copy{text-align:center;max-width:760px;margin:0 auto 30px}
-.growth-final-copy .eyebrow{font-size:11px;letter-spacing:2.5px;font-weight:800;color:#0b3769;display:inline-block;border-bottom:3px solid #d7ab3f;padding-bottom:8px}
-.growth-final-copy h2{font:700 48px/1.05 Georgia,serif;color:#0b3769;margin:14px 0}
-.growth-final-copy h2 span{color:#c7962e}
-.growth-final-copy p{font-size:17px;line-height:1.6;color:#5d6c7d;max-width:700px;margin:auto}
-.growth-final-image{border-radius:16px;overflow:hidden;background:#fff;border:1px solid #dbe1e8;box-shadow:0 18px 45px rgba(8,47,91,.14)}
-.growth-final-image img{display:block;width:100%;height:auto}
-.growth-final-cta{margin-top:26px;padding:28px 32px;border-radius:14px;background:#0b3769;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.growth-final-cta small{color:#e3b64b;font-weight:800;letter-spacing:2px}
-.growth-final-cta h3{font-size:27px;margin:8px 0}
-.growth-final-cta p{margin:0;color:#dbe7f4;line-height:1.55;max-width:720px}
-.growth-final-cta a{background:#e2b448;color:#082f60;text-decoration:none;font-weight:800;padding:15px 21px;border-radius:7px;white-space:nowrap}
-@media(max-width:780px){
- .growth-final{padding:52px 0 62px}
- .growth-final-inner{width:calc(100% - 24px)}
- .growth-final-copy h2{font-size:37px}
- .growth-final-copy p{font-size:15px}
- .growth-final-image{border-radius:10px}
- .growth-final-cta{display:block;padding:23px;margin-top:16px}
- .growth-final-cta h3{font-size:23px}
- .growth-final-cta p{font-size:15px}
- .growth-final-cta a{display:block;text-align:center;margin-top:18px}
-}
-</style>
-
-<style id="exact-hero-v13">
-.hero.hero-exact{
-  height:auto!important;
-  min-height:0!important;
-  position:relative!important;
-  overflow:hidden!important;
-  background:#fff!important;
-}
-.hero-exact-image{
-  display:block!important;
-  width:100%!important;
-  height:auto!important;
-  max-width:none!important;
-  object-fit:contain!important;
-  object-position:center center!important;
-}
-@media(max-width:780px){
-  .hero.hero-exact{
-    height:auto!important;
-    min-height:0!important;
-  }
-  .hero-exact-image{
-    width:100%!important;
-    height:auto!important;
-    object-fit:contain!important;
-  }
-}
-</style>
-
-<style id="clean-hero-v15">
-.clean-hero{height:clamp(520px,50vw,900px)!important;min-height:0!important;background:#082f60!important;position:relative!important;overflow:hidden!important;padding:0!important}
-.clean-hero-bg{position:absolute;inset:-25px;background:url('hero-exact.jpg') center/cover no-repeat;filter:blur(18px);transform:scale(1.08);opacity:.42}
-.clean-hero-frame{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1}
-.clean-hero .hero-exact-image{width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important;object-position:center center!important;display:block!important;filter:contrast(1.02) saturate(1.01)!important}
-@media(max-width:780px){
- .clean-hero{height:auto!important;min-height:0!important;background:#fff!important}
- .clean-hero-bg{display:none}
- .clean-hero-frame{position:relative;inset:auto;display:block}
- .clean-hero .hero-exact-image{width:100%!important;height:auto!important;object-fit:contain!important}
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
-<body>
-<div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
-<header><div class="wrap nav"><a class="brand" href="#home"><img src="brand-logo.jpg" alt="Unity Path Recovery and Collection Services OPC"></a><nav class="navlinks"><a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a><a class="navbtn" href="#contact-detail">Get in Touch&nbsp; →</a></nav><button class="menu" aria-label="Open menu">☰</button></div></header>
 
-<section id="home" class="hero hero-exact clean-hero">
-  <div class="clean-hero-bg" aria-hidden="true"></div>
-  <div class="clean-hero-frame">
-    <img src="hero-banner.jpg" alt="Unity Path - People Create Brighter Tomorrows" class="hero-exact-image">
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span class="top-message"><i class="gold-line"></i>PEOPLE&nbsp; | &nbsp;PROCESS&nbsp; | &nbsp;PROGRESS</span>
+    <span class="top-actions">
+      <a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener noreferrer">
+        <span class="fb-mini" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span>Follow Us
+      </a>
+      <span class="top-divider">|</span><em>Building Better Financial Futures</em>
+    </span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Unity Path home"><img src="brand-logo.jpg" alt="UNITY PATH RECOVERY AND COLLECTION SERVICES OPC"></a>
+    <nav class="navlinks" aria-label="Primary navigation">
+      <a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#approach">Our Approach</a><a href="#compliance">Compliance</a><a href="#careers">Careers</a><a href="#contact">Contact</a><a class="navbtn" href="#contact">Get in Touch&nbsp; →</a>
+    </nav>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-photo" aria-hidden="true"></div><div class="hero-panel" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow">People | Process | Progress</div>
+      <h1>People<br>Create<br><span>Brighter<br>Tomorrows</span></h1>
+      <div class="hero-line"></div>
+      <p class="hero-text">Through responsible recovery, we help businesses and individuals move forward.</p>
+      <a class="hero-cta" href="#contact">Partner With Us&nbsp; →</a>
+    </div>
+</div>
+</section>
+
+<section class="features" aria-label="Key capabilities">
+  <div class="wrap feature-row">
+    <div class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c.6-3.2 2.6-5 6-5s5.4 1.8 6 5"/><path d="M14 14c3.1-.1 5.3 1.5 6 4.2"/></svg></div><b>CLIENT<br>SUPPORT</b></div>
+    <div class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><b>ACCOUNT<br>MANAGEMENT</b></div>
+    <div class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><b>COMPLIANCE<br>FOCUSED</b></div>
+    <div class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V6M16 20V3M22 20H2"/><path d="m4 9 5-3 6-2 4-2"/></svg></div><b>SUSTAINABLE<br>SOLUTIONS</b></div>
   </div>
 </section>
-<section class="features"><div class="feature-row">
-<div><div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c.6-3.2 2.6-5 6-5s5.4 1.8 6 5"/><path d="M14 14c3.1-.1 5.3 1.5 6 4.2"/></svg></div><b>CLIENT<br>SUPPORT</b></div>
-<div><div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><b>ACCOUNT<br>MANAGEMENT</b></div>
-<div><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><b>COMPLIANCE<br>FOCUSED</b></div>
-<div><div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V6M16 20V3M22 20H2"/><path d="m4 9 5-3 6-2 4-2"/></svg></div><b>SUSTAINABLE<br>SOLUTIONS</b></div>
-</div></section>
-<section id="about" class="about"><div class="wrap about-grid"><div><div class="label">ABOUT UNITY PATH</div><h2>A Partner in Responsible<br><span>Account Recovery</span></h2><p>UNITY PATH RECOVERY AND COLLECTION SERVICES OPC is a growing Philippine collection service provider focused on professional communication, organized processes, and dependable support for businesses.</p><p>We believe in building better financial futures through integrity, discipline, and people-centered service.</p><a class="goldbtn" href="#services-detail">Learn More About Us&nbsp; →</a></div><div class="about-img"><img src="office-logo.jpg" alt="Unity Path office branding"></div><div class="side-list">
-<div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 20c.5-3.2 2.5-5 6-5s5.5 1.8 6 5"/><path d="M14 15c3-.1 5.3 1.5 6 4"/></svg></div><div><b>Professional Team</b><span>Committed to ethical and respectful communication.</span></div></div>
-<div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.2-1.7l2-1.5-2-3.4-2.3 1a8 8 0 0 0-3-1.7L13.2 4H9.3l-.4 2.7a8 8 0 0 0-3 1.7l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 3.4 12c0 .6.1 1.2.2 1.7l-2 1.5 2 3.4 2.3-1a8 8 0 0 0 3 1.7l.4 2.7h3.9l.4-2.7a8 8 0 0 0 3-1.7l2.3 1 2-3.4-2-1.5c.1-.5.2-1.1.2-1.7z"/></svg></div><div><b>Organized Processes</b><span>Focused on accurate records and proper documentation.</span></div></div>
-<div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div><b>Compliance Minded</b><span>We work within legal and regulatory guidelines.</span></div></div>
-<div class="side-item"><div class="side-icon"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V7M16 20V4M22 20H2"/></svg></div><div><b>Growing With Purpose</b><span>Continuously improving to serve our clients better.</span></div></div>
-</div></div></section>
 
-<section id="services-detail" class="detail-section">
-  <div class="section-inner">
-    <div class="eyebrow">OUR SERVICES</div>
-    <h2>Professional Recovery Solutions</h2>
-    <p class="lead">Structured, respectful, and results-driven collection support designed to help businesses manage accounts responsibly.</p>
-    <div class="detail-grid">
-      <article class="detail-card"><div class="detail-icon">01</div><h3>Account Recovery</h3><p>Professional account follow-up focused on clear communication, responsible engagement, and practical recovery solutions.</p></article>
-      <article class="detail-card"><div class="detail-icon">02</div><h3>Collection Services</h3><p>Organized collection support with consistent processes, proper documentation, and transparent status reporting.</p></article>
-      <article class="detail-card"><div class="detail-icon">03</div><h3>Account Management</h3><p>Accurate handling of assigned accounts, activity tracking, and timely updates for clients.</p></article>
-      <article class="detail-card"><div class="detail-icon">04</div><h3>Reporting & Documentation</h3><p>Clear records and regular reporting to support accountability, visibility, and informed decisions.</p></article>
+<section id="about" class="section">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <div class="eyebrow">About Unity Path</div>
+      <h2>A Partner in Responsible<br><span>Account Recovery</span></h2>
+      <p>UNITY PATH RECOVERY AND COLLECTION SERVICES OPC is a growing Philippine collection service provider focused on professional communication, organized processes, and dependable support for businesses.</p>
+      <p>We believe in building better financial futures through integrity, discipline, and people-centered service.</p>
+      <a class="gold-btn" href="#services">Learn More About Us&nbsp; →</a>
+    </div>
+    <div class="about-image"><img src="office-logo.jpg" alt="UNITY PATH office branding" loading="lazy"></div>
+    <div class="side-list">
+      <div class="side-item"><div class="side-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 20c.5-3.2 2.5-5 6-5s5.5 1.8 6 5"/><path d="M14 15c3-.1 5.3 1.5 6 4"/></svg></div><div><b>Professional Team</b><span>Committed to ethical and respectful communication.</span></div></div>
+      <div class="side-item"><div class="side-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.2-1.7l2-1.5-2-3.4-2.3 1a8 8 0 0 0-3-1.7L13.2 4H9.3l-.4 2.7a8 8 0 0 0-3 1.7l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 3.4 12c0 .6.1 1.2.2 1.7l-2 1.5 2 3.4 2.3-1a8 8 0 0 0 3 1.7l.4 2.7h3.9l.4-2.7a8 8 0 0 0 3-1.7l2.3 1 2-3.4-2-1.5c.1-.5.2-1.1.2-1.7z"/></svg></div><div><b>Organized Processes</b><span>Focused on accurate records and proper documentation.</span></div></div>
+      <div class="side-item"><div class="side-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.3 8.5-8 10-4.7-1.5-8-5-8-10V6l8-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><div><b>Compliance Minded</b><span>We work within legal and regulatory guidelines.</span></div></div>
+      <div class="side-item"><div class="side-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20V7M16 20V4M22 20H2"/><path d="m4 9 5-3 6-2 4-2"/></svg></div><div><b>Growing With Purpose</b><span>Continuously improving to serve our clients better.</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="compliance-detail" class="detail-section light">
-  <div class="section-inner two-col">
+<section id="services" class="section alt">
+  <div class="wrap">
+    <div class="eyebrow">Our Services</div><h2>Professional Recovery Solutions</h2>
+    <p class="lead">Structured, respectful, and results-driven collection support designed to help businesses manage accounts responsibly.</p>
+    <div class="cards">
+      <article class="card"><div class="card-number">01</div><h3>Account Recovery</h3><p>Professional account follow-up focused on clear communication, responsible engagement, and practical recovery solutions.</p></article>
+      <article class="card"><div class="card-number">02</div><h3>Collection Services</h3><p>Organized collection support with consistent processes, proper documentation, and transparent status reporting.</p></article>
+      <article class="card"><div class="card-number">03</div><h3>Account Management</h3><p>Accurate handling of assigned accounts, activity tracking, and timely updates for clients.</p></article>
+      <article class="card"><div class="card-number">04</div><h3>Reporting &amp; Documentation</h3><p>Clear records and regular reporting to support accountability, visibility, and informed decisions.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="approach" class="section approach">
+  <div class="wrap approach-grid">
+    <div><div class="eyebrow">Our Approach</div><h2>A Clearer Path,<br>Step by Step</h2></div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><div><b>Understand</b><p>We review each account and identify the best approach.</p></div></div>
+      <div class="step"><div class="step-num">02</div><div><b>Communicate</b><p>We engage with professionalism and respect.</p></div></div>
+      <div class="step"><div class="step-num">03</div><div><b>Document</b><p>We maintain accurate records at every step.</p></div></div>
+      <div class="step"><div class="step-num">04</div><div><b>Report</b><p>We provide transparent updates and results.</p></div></div>
+    </div>
+    <div class="approach-quote">Responsible today.<br>Stronger tomorrow.</div>
+  </div>
+</section>
+
+<section id="compliance" class="section alt">
+  <div class="wrap two-col">
     <div>
-      <div class="eyebrow">COMPLIANCE</div>
-      <h2>Responsible Collection, Every Step</h2>
-      <p>We believe effective recovery should be built on professionalism, respect, accurate records, confidentiality, and responsible communication.</p>
-      <p>Our processes are designed to support ethical account handling and to operate within applicable legal and regulatory requirements.</p>
+      <div class="eyebrow">Compliance</div><h2>Responsible Collection,<br>Every Step</h2>
+      <p class="lead">We believe effective recovery should be built on professionalism, respect, accurate records, confidentiality, and responsible communication.</p>
+      <p class="lead" style="margin-top:12px">Our processes are designed to support ethical account handling and to operate within applicable legal and regulatory requirements.</p>
     </div>
     <div class="compliance-list">
-      <div><b>Professional Communication</b><span>Clear, respectful, and appropriate engagement.</span></div>
-      <div><b>Confidentiality</b><span>Responsible handling of account and client information.</span></div>
-      <div><b>Accurate Documentation</b><span>Consistent records and traceable account activity.</span></div>
-      <div><b>Responsible Practices</b><span>People-centered recovery with accountability at every stage.</span></div>
+      <div class="compliance-item"><b>Professional Communication</b><span>Clear, respectful, and appropriate engagement.</span></div>
+      <div class="compliance-item"><b>Confidentiality</b><span>Responsible handling of account and client information.</span></div>
+      <div class="compliance-item"><b>Accurate Documentation</b><span>Consistent records and traceable account activity.</span></div>
+      <div class="compliance-item"><b>Responsible Practices</b><span>People-centered recovery with accountability at every stage.</span></div>
     </div>
   </div>
 </section>
 
-
-
-<section id="careers-detail" class="growth-final">
-  <div class="growth-final-inner">
-    <div class="growth-final-copy">
-      <div class="eyebrow">GROW WITH UNITY PATH</div>
-      <h2>Focused People.<br><span>Real Results.</span></h2>
-      <p>Our people are at the center of responsible recovery. We build a team that values professionalism, discipline, communication, and continuous improvement.</p>
-    </div>
-    <div class="growth-final-image">
-      <img src="growth-campaign.jpg" alt="Unity Path focused people real results">
-    </div>
-    <div class="growth-final-cta">
-      <div>
-        <small>CAREERS AT UNITY PATH</small>
-        <h3>Join Our Growing Team</h3>
-        <p>Interested in becoming part of Unity Path Recovery and Collection Services OPC? Send your application or inquiry to our official email.</p>
-      </div>
-      <a href="mailto:admin@unitypathrecovery.com">Send Your Application →</a>
+<section id="careers" class="section careers">
+  <div class="wrap">
+    <div class="eyebrow">Careers</div><h2>Grow With Unity Path</h2>
+    <p class="lead">We are building a professional team that values integrity, discipline, communication, and continuous improvement.</p>
+    <div class="career-visual"><img src="growth-campaign.jpg" alt="UNITY PATH team members" loading="lazy"></div>
+    <div class="career-box">
+      <div><h3>Join Our Growing Team</h3><p>Interested in becoming part of Unity Path Recovery and Collection Services OPC? Send your application or inquiry to our official email.</p></div>
+      <a class="gold-btn" href="mailto:admin@unitypathrecovery.com">Send Your Application&nbsp; →</a>
     </div>
   </div>
 </section>
 
-<section id="contact-detail" class="detail-section contact-section">
-  <div class="section-inner">
-    <div class="eyebrow">CONTACT US</div>
-    <h2>Let's Build a Better Path Forward</h2>
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="eyebrow">Contact Us</div><h2>Let's Build a Better Path Forward</h2>
     <div class="contact-grid">
-      <div class="contact-card"><h3>Office</h3><p>Evangelista Building, Jose Sarreal Street, 2106, Mariveles, Bataan<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Evangelista Building, Jose Sarreal Street, 2106, Mariveles, Bataan<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
+      <div class="contact-card"><h3>Office</h3><p>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
       <div class="contact-card"><h3>Phone</h3><p><a href="tel:+639192555965">+63 919 255 5965</a></p></div>
       <div class="contact-card"><h3>Email</h3><p><a href="mailto:admin@unitypathrecovery.com">admin@unitypathrecovery.com</a></p></div>
-      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
+      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener noreferrer">Visit Our Facebook Page&nbsp; →</a></p></div>
     </div>
   </div>
 </section>
-<section id="approach" class="approach"><div class="wrap approach-grid"><div><div class="label">OUR APPROACH</div><h2>A Clearer Path, Step by Step</h2></div><div class="steps"><div class="step"><div class="num">01</div><div><b>Understand</b><p>We review each account and identify the best approach.</p></div></div><div class="step"><div class="num">02</div><div><b>Communicate</b><p>We engage with professionalism and respect.</p></div></div><div class="step"><div class="num">03</div><div><b>Document</b><p>We maintain accurate records at every step.</p></div></div><div class="step"><div class="num">04</div><div><b>Report</b><p>We provide transparent updates and results.</p></div></div></div><div class="approach-quote">Responsible today.<br>Stronger tomorrow.</div></div></section>
-<section id="services" style="display:none"></section><section id="compliance" style="display:none"></section><section id="careers" style="display:none"></section><section id="contact" style="display:none"></section>
-<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
-<script>const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks');menu&&menu.addEventListener('click',()=>nav.classList.toggle('show'));nav&&nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));</script>
+</main>
 
-<script id="mobile-nav-v8">
-document.addEventListener('DOMContentLoaded', function(){
-  const toggle = document.querySelector('.nav-toggle, .hamburger, [aria-label="Menu"], [aria-label="menu"]');
-  const menu = document.querySelector('.nav-menu, .nav-links, .nav-list');
-  if(!toggle || !menu) return;
-  toggle.setAttribute('aria-expanded','false');
-  toggle.addEventListener('click', function(e){
-    e.preventDefault();
-    const open = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-  });
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      menu.classList.remove('open');
-      toggle.setAttribute('aria-expanded','false');
-    });
-  });
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand"><img src="brand-logo.jpg" alt="UNITY PATH RECOVERY AND COLLECTION SERVICES OPC"></div>
+    <div><div class="footer-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#approach">Our Approach</a><a href="#compliance">Compliance</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div>
+    <div><div class="footer-title">Contact Information</div><span>Philippines</span><a href="mailto:admin@unitypathrecovery.com">admin@unitypathrecovery.com</a><a href="tel:+639192555965">+63 919 255 5965</a><span>Mon - Fri, 8:00 AM - 5:00 PM</span></div>
+    <div><div class="footer-title">Follow Us</div><a class="fb-link" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener noreferrer"><span class="fb-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span>Facebook Page</a><span style="margin-top:9px">Stay updated with our latest news<br>and announcements.</span><a class="footer-cta" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener noreferrer">Message Us&nbsp; →</a></div>
+  </div>
+  <div class="wrap copyright"><span>© 2026 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>People | Process | Progress</span></div>
+</footer>
+
+<script>
+const menu=document.querySelector(".menu");
+const nav=document.querySelector(".navlinks");
+menu?.addEventListener("click",()=>{
+  const open=nav.classList.toggle("show");
+  menu.setAttribute("aria-expanded",String(open));
+  menu.setAttribute("aria-label",open?"Close navigation":"Open navigation");
 });
+nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+  nav.classList.remove("show");
+  menu?.setAttribute("aria-expanded","false");
+  menu?.setAttribute("aria-label","Open navigation");
+}));
 </script>
-</body></html>
+</body>
+</html>
