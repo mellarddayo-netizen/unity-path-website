@@ -227,35 +227,57 @@ html{scroll-behavior:smooth}
 }
 </style>
 
-<style id="expectation-v14">
-.expectation-hero{
-  width:100%;
-  margin:0;
-  padding:0;
-  background:#062f5f;
-  overflow:hidden;
+<style id="exact-hero-v13">
+.hero.hero-exact{
+  height:auto!important;
+  min-height:0!important;
+  position:relative!important;
+  overflow:hidden!important;
+  background:#fff!important;
 }
-.expectation-hero img{
-  display:block;
-  width:100%;
-  height:auto;
-  max-width:none;
+.hero-exact-image{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:center center!important;
 }
 @media(max-width:780px){
-  .expectation-hero img{
-    width:100%;
-    height:auto;
-    object-fit:contain;
+  .hero.hero-exact{
+    height:auto!important;
+    min-height:0!important;
   }
+  .hero-exact-image{
+    width:100%!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+}
+</style>
+
+<style id="clean-hero-v15">
+.clean-hero{height:clamp(520px,50vw,900px)!important;min-height:0!important;background:#082f60!important;position:relative!important;overflow:hidden!important;padding:0!important}
+.clean-hero-bg{position:absolute;inset:-25px;background:url('hero-exact.jpg') center/cover no-repeat;filter:blur(18px);transform:scale(1.08);opacity:.42}
+.clean-hero-frame{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1}
+.clean-hero .hero-exact-image{width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important;object-position:center center!important;display:block!important;filter:contrast(1.02) saturate(1.01)!important}
+@media(max-width:780px){
+ .clean-hero{height:auto!important;min-height:0!important;background:#fff!important}
+ .clean-hero-bg{display:none}
+ .clean-hero-frame{position:relative;inset:auto;display:block}
+ .clean-hero .hero-exact-image{width:100%!important;height:auto!important;object-fit:contain!important}
 }
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
+<div class="top"><div class="wrap"><span><i class="goldline"></i>PEOPLE | PROCESS | PROGRESS</span><span class="top-right"><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fb-mini"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Follow Us</a><span class="divider">|</span><em>Building Better Financial Futures</em></span></div></div>
 <header><div class="wrap nav"><a class="brand" href="#home"><img src="brand-logo.jpg" alt="Unity Path Recovery and Collection Services OPC"></a><nav class="navlinks"><a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a><a class="navbtn" href="#contact-detail">Get in Touch&nbsp; →</a></nav><button class="menu" aria-label="Open menu">☰</button></div></header>
 
-<section id="home" class="expectation-hero">
-  <img src="hero-exact-expectation.jpg" alt="Unity Path People Create Brighter Tomorrows" />
+<section id="home" class="hero hero-exact clean-hero">
+  <div class="clean-hero-bg" aria-hidden="true"></div>
+  <div class="clean-hero-frame">
+    <img src="hero-banner.jpg" alt="Unity Path - People Create Brighter Tomorrows" class="hero-exact-image">
+  </div>
 </section>
 <section class="features"><div class="feature-row">
 <div><div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c.6-3.2 2.6-5 6-5s5.4 1.8 6 5"/><path d="M14 14c3.1-.1 5.3 1.5 6 4.2"/></svg></div><b>CLIENT<br>SUPPORT</b></div>
@@ -329,16 +351,16 @@ html{scroll-behavior:smooth}
     <div class="eyebrow">CONTACT US</div>
     <h2>Let's Build a Better Path Forward</h2>
     <div class="contact-grid">
-      <div class="contact-card"><h3>Office</h3><p>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Evangelista Building<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
+      <div class="contact-card"><h3>Office</h3><p>Evangelista Building, Jose Sarreal Street, 2106, Mariveles, Bataan<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Evangelista Building, Jose Sarreal Street, 2106, Mariveles, Bataan<br>Jose Sarreal Street<br>Mariveles, Bataan 2106<br>Philippines</p></div>
       <div class="contact-card"><h3>Phone</h3><p><a href="tel:+639192555965">+63 919 255 5965</a></p></div>
       <div class="contact-card"><h3>Email</h3><p><a href="mailto:admin@unitypathrecovery.com">admin@unitypathrecovery.com</a></p></div>
-      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
+      <div class="contact-card"><h3>Facebook</h3><p><a href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Visit Our Facebook Page →</a></p></div>
     </div>
   </div>
 </section>
 <section id="approach" class="approach"><div class="wrap approach-grid"><div><div class="label">OUR APPROACH</div><h2>A Clearer Path, Step by Step</h2></div><div class="steps"><div class="step"><div class="num">01</div><div><b>Understand</b><p>We review each account and identify the best approach.</p></div></div><div class="step"><div class="num">02</div><div><b>Communicate</b><p>We engage with professionalism and respect.</p></div></div><div class="step"><div class="num">03</div><div><b>Document</b><p>We maintain accurate records at every step.</p></div></div><div class="step"><div class="num">04</div><div><b>Report</b><p>We provide transparent updates and results.</p></div></div></div><div class="approach-quote">Responsible today.<br>Stronger tomorrow.</div></div></section>
 <section id="services" style="display:none"></section><section id="compliance" style="display:none"></section><section id="careers" style="display:none"></section><section id="contact" style="display:none"></section>
-<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
+<footer><div class="wrap foot-grid"><div class="foot-brand"><img src="brand-logo.jpg" alt="Unity Path"></div><div><div class="foot-title">Quick Links</div><a href="#home">Home</a><a href="#about">About Us</a><a href="#services-detail">Services</a><a href="#approach">Our Approach</a><a href="#compliance-detail">Compliance</a><a href="#careers-detail">Careers</a><a href="#contact-detail">Contact</a></div><div><div class="foot-title">Contact Information</div><span>⌖ Philippines</span><a href="mailto:admin@unitypathrecovery.com">✉ admin@unitypathrecovery.com</a><span>☎ +63 919 255 5965</span><span>◷ Mon - Fri, 8:00 AM - 5:00 PM</span></div><div><div class="foot-title">Follow Us</div><a class="fb" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener"><span class="fbbox"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg></span> Facebook Page</a><span style="margin-top:8px">Stay updated with our latest news<br>and announcements.</span></div><div><a class="message" href="https://www.facebook.com/profile.php?id=61594091440461" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener" target="_blank" rel="noopener">Message Us&nbsp; →</a></div></div><div class="wrap copy"><span>© 2024 UNITY PATH RECOVERY AND COLLECTION SERVICES OPC. All rights reserved.</span><span>Privacy Policy&nbsp;&nbsp; | &nbsp;&nbsp;Terms of Service</span></div></footer>
 <script>const menu=document.querySelector('.menu'),nav=document.querySelector('.navlinks');menu&&menu.addEventListener('click',()=>nav.classList.toggle('show'));nav&&nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));</script>
 
 <script id="mobile-nav-v8">
